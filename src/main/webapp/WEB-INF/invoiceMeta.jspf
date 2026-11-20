@@ -1,0 +1,2 @@
+<%@ page pageEncoding="UTF-8" %>
+<div class="meta"><p><span>Mã HĐ nhập</span><%=Web.h(inv.importInvoiceId)%></p><p><span>Ngày nhập</span><%=Web.date(inv.importDate)%></p><p><span>Nhân viên lập</span><%=Web.h(inv.warehouseStaff.fullName)%> (<%=Web.h(inv.warehouseStaff.staffId)%>)</p><p><span>Nhà cung cấp</span><%=Web.h(inv.supplier.name)%></p></div>

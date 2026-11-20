@@ -1,0 +1,6 @@
+<%@ page pageEncoding="UTF-8" %>
+<!DOCTYPE html><html lang="vi"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Siêu thị điện máy</title><link rel="stylesheet" href="assets/style.css"></head><body>
+<header><a class="brand" href="gdHome9.jsp">Siêu thị điện máy</a><nav>
+<% if(session.getAttribute("member") == null) { %><a href="gdLogin9.jsp">Đăng nhập</a><a href="gdRegister9.jsp">Đăng ký thành viên</a>
+<% } else { %><form method="post" action="gdLogin9.jsp"><%=Web.csrf(session)%><button class="secondary" name="action" value="logout">Đăng xuất</button></form><% } %>
+</nav></header>
